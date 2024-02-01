@@ -1,0 +1,79 @@
+.window-controls-container.primary {
+  /* position: absolute; */
+  /* left: 10px; */
+  /* top: 30px; */
+  height: 35px !important;
+  display: flex !important;
+  align-items: center;
+  gap: 16px;
+}
+
+.window-controls-container.primary div:nth-child(1) {
+  order: 2;
+}
+
+.window-controls-container.primary div:nth-child(2) {
+  order: 3;
+}
+
+.window-controls-container.primary div:nth-child(3) {
+  order: 1;
+}
+
+.composite.title {
+  display: flex;
+  justify-content: end;
+  flex: 1;
+}
+
+.window-icon {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50%;
+}
+
+.window-icon img {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.window-close {
+  background-color: #ff5f57 !important;
+}
+
+.window-close::before {
+  content: "";
+}
+
+.window-max-restore {
+  background-color: #28ca42 !important;
+}
+.window-max-restore::before {
+  content: "";
+}
+
+.window-minimize {
+  background-color: #ffbd2e !important;
+}
+
+.window-minimize::before {
+  content: "";
+}
+
+.titlebar-container {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 10px !important;
+}
+
+.titlebar-left {
+  justify-content: flex-end !important;
+}
+
+.titlebar-right {
+  flex-direction: row-reverse;
+}
+
+.titlebar-right > div.action-toolbar-container {
+  margin-left: inherit !important;
+}
